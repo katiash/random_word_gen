@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <title> Random Word Generator</title>
+
+        <!-- ADDED THIS TO LOAD STATIC FOLDER ITEMS -->
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'rand_word/css/style.css' %}">
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- <div class="box">
+                <h3>Random Word (attempt #{{ request.session.tries }})</h3>
+                <h1>{{ request.session.word }}</h1>
+                <a href="/generate"><button>Generate</button></a>
+                <a href="/reset"><button>Reset</button></a>
+            </div> -->
+
+            <div class="box">
+                <h3>Random Word (attempt #{{ request.session.tries }})</h3>
+                <h1>{{mystr}}</h1>
+                <a href="/generate2"><button>Generate</button></a>
+                <a href="/reset2"><button>Reset</button></a>
+            </div>
+        </div>
+    </body>
+</html>

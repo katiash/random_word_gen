@@ -1,0 +1,12 @@
+#wrapper{
+    width: 970px;
+    padding: 20px;
+};
+
+.box{
+    color: red;
+    height: 60px;
+    width: 100px;
+    vertical-align: middle;
+    text-align: center;
+};
