@@ -29,7 +29,10 @@ def generate(request):
     # return render(request, 'rand_word/index.html')
     return redirect('/')
 
-
+def reset(request):
+    del request.session['tries']
+    del request.session['word']
+    return redirect('/')
 
 # Example: get_random_string(length=14) gets a random string
 # of legth 14. 
